@@ -33,7 +33,7 @@ Then evaluate the temperature distribution using key metrics:
 
 ## 📁 Dataset Description
 
-📂 Path: `/dtu/projects/02613_2025/data/modified_swiss_dwellings/`
+📂 Path: `file`
 
 Each building has:
 
