@@ -1,25 +1,57 @@
-# 02613 Mini-Project: Wall Heating!
+# 🔥 02613 Mini-Project: Wall Heating (High Performance Computing)
 
-## 🔥 Overview
+## 📌 Project Overview
 
-This project evaluates a fictional heating system called **Wall Heating**, where inside walls of buildings are heated to 25°C, while load-bearing walls stay cold at 5°C. The system is simulated across thousands of 2D building floorplans using the **Jacobi method** to compute steady-state temperature distributions.
+This project explores a novel **Wall Heating** approach where inside walls of buildings are heated instead of using traditional radiators or floor heating. The heating effect is simulated using numerical methods on thousands of 2D building floorplans derived from the **Modified Swiss Dwellings** dataset.
 
-The dataset comes from the **Modified Swiss Dwellings** project and contains over 4500 labeled floorplans. The goal is to:
+The project combines:
 
-- Simulate temperature distributions in buildings
-- Measure the effectiveness of the Wall Heating strategy
-- **Optimize** and **accelerate** the simulation through various methods
+- Computational simulation (Jacobi method)
+- Performance profiling and optimization
+- Parallelization (CPU & GPU)
+- Scientific data visualization
+- Final statistical analysis
 
 ---
 
-## 🧪 Simulation Approach
+## 🏗️ Objective
 
-We solve the steady-state heat distribution governed by **Laplace’s equation** with Dirichlet boundary conditions:
+Simulate steady-state heat diffusion in buildings with:
 
-- Load-bearing walls: fixed at **5°C**
-- Inside walls: fixed at **25°C**
-- Interior points (rooms): iteratively updated using the **Jacobi method**
+- **Inside walls** at **25°C**
+- **Load-bearing walls** at **5°C**
+- **Room interiors** initialized at 0°C
 
-### Jacobi Iteration Formula:
+Then evaluate the temperature distribution using key metrics:
 
-For each interior point `u[i, j]`:
+- 🔹 Mean temperature inside rooms
+- 🔹 Temperature standard deviation
+- 🔹 % area above 18°C (mold risk zone)
+- 🔹 % area below 15°C (comfort threshold)
+
+---
+
+## 📁 Dataset Description
+
+📂 Path: `/dtu/projects/02613_2025/data/modified_swiss_dwellings/`
+
+Each building has:
+
+- `{id}_domain.npy` → Grid with walls (5 or 25°C) and interior (0°C)
+- `{id}_interior.npy` → Binary mask (1 = interior, 0 = wall/outside)
+
+Additional file:
+
+- `building_ids.txt` → List of all building IDs (≈4571 buildings)
+
+Grid size: `512 x 512` (with padding to `514 x 514` during simulation)
+
+---
+
+## 🧮 Simulation Method: Jacobi Iteration
+
+Solves the discrete Laplace equation to model steady-state heat flow:
+
+```python
+u[i, j] = 0.25 * (u[i+1, j] + u[i-1, j] + u[i, j+1] + u[i, j-1])
+```
