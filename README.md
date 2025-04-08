@@ -26,8 +26,8 @@ Then evaluate the temperature distribution using key metrics:
 
 - 🔹 Mean temperature inside rooms
 - 🔹 Temperature standard deviation
-- 🔹 % area above 18°C (mold risk zone)
-- 🔹 % area below 15°C (comfort threshold)
+- 🔹 area above 18°C (mold risk zone)
+- 🔹 area below 15°C (comfort threshold)
 
 ---
 
