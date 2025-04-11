@@ -1,9 +1,8 @@
 from os.path import join
 import sys
 import time  
-
 import numpy as np
-
+import visualize as v
 
 def load_data(load_dir, bid):
     SIZE = 512
@@ -82,7 +81,12 @@ if __name__ == '__main__':
         runtime_s = time.time() - start_time
         all_u[i] = u
 
+        # v.after_plot_building(u, interior_mask)
+
         stats = summary_stats(u, interior_mask)
         stats['runtime_s'] = round(runtime_s, 4)
 
         print(f"{bid},", ", ".join(str(stats[k]) for k in stat_keys))
+    
+v.after_plot_all_buildings(all_u, all_interior_mask, building_ids)
+

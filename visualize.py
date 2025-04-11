@@ -50,7 +50,7 @@ def plot_building_batch(building_ids, base_path, n_cols=2):
 
         # 下排：interior mask
         ax2 = axes[1, col]
-        ax2.imshow(interior, cmap='binary')  # 更强烈的黑白对比
+        ax2.imshow(interior, cmap='gray', vmin=0, vmax=1)  # 更强烈的黑白对比
         ax2.axis('off')
 
     # 添加 colorbar 到右侧（仅一次）
@@ -60,4 +60,38 @@ def plot_building_batch(building_ids, base_path, n_cols=2):
     plt.tight_layout(rect=[0, 0, 0.9, 1])  # 预留右侧 colorbar 空间
     plt.show()
 
-plot_building_batch(building_ids, base_path)
+def after_plot_all_buildings(all_u, all_masks, building_ids):
+    n_rows = 2  # 每个建筑显示两行图（温度 & mask）
+    n_cols = len(building_ids)
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(4 * n_cols, 6), dpi=100)
+
+    cmap = plt.cm.magma
+    vmin, vmax = 0, 25  # 温度范围固定统一
+    norm = plt.Normalize(vmin=vmin, vmax=vmax)
+
+    for col, bid in enumerate(building_ids):
+        u = all_u[col]
+        interior = all_masks[col]
+
+        # 温度图
+        ax1 = axes[0, col] if n_cols > 1 else axes[0]
+        im = ax1.imshow(u, cmap=cmap, norm=norm)
+        ax1.set_title(f"Building {bid}", fontsize=10)
+        ax1.axis('off')
+
+        # mask 图
+        ax2 = axes[1, col] if n_cols > 1 else axes[1]
+        ax2.imshow(interior, cmap='gray', vmin=0, vmax=1)  # 更强烈的黑白对比
+        ax2.set_title("Interior Mask", fontsize=12)        
+        ax2.axis('off')
+
+    # 添加 colorbar 到右侧（仅一次）
+    cbar_ax = fig.add_axes([0.92, 0.3, 0.015, 0.4])  # [left, bottom, width, height]
+    fig.colorbar(im, cax=cbar_ax, label='Temperature')
+
+    plt.tight_layout(rect=[0, 0, 0.9, 1])  # 预留右侧 colorbar 空间
+    plt.show()
+
+if __name__ == '__main__':
+
+    plot_building_batch(building_ids, base_path)
