@@ -7,7 +7,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 base_path = os.path.join(script_dir, "file")
 
 # 假设数据路径和楼栋 ID 已知
-building_ids = ['1869', '5158']
+building_ids = ['694','986','1878','1869','3171','4485','5158','5971','6233','6452','7025','7987','8264','9648','9991','10000','10535','29753','49314','50814']
 building_id = '1869'
 
 # 示例读取一个 building 的 domain 和 interior
@@ -94,4 +94,4 @@ def after_plot_all_buildings(all_u, all_masks, building_ids):
 
 if __name__ == '__main__':
 
-    plot_building_batch(building_ids, base_path)
+    plot_building_batch(building_ids, base_path, 20)
