@@ -10,21 +10,6 @@ def load_data(load_dir, bid):
     interior_mask = np.load(join(load_dir, f"{bid}_interior.npy"))
     return u, interior_mask
 
-
-# def jacobi(u, interior_mask, max_iter, atol=1e-6):
-#     u = np.copy(u)
-
-#     for i in range(max_iter):
-#         # Compute average of left, right, up and down neighbors, see eq. (1)
-#         u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
-#         u_new_interior = u_new[interior_mask]
-#         delta = np.abs(u[1:-1, 1:-1][interior_mask] - u_new_interior).max()
-#         u[1:-1, 1:-1][interior_mask] = u_new_interior
-
-#         if delta < atol:
-#             break
-#     return u
-
 @profile
 def jacobi(u, interior_mask, max_iter, atol=1e-6):
     u = np.copy(u)  # 行 16
@@ -38,8 +23,6 @@ def jacobi(u, interior_mask, max_iter, atol=1e-6):
         if delta < atol:
             break
     return u
-
-
 
 def summary_stats(u, interior_mask):
     u_interior = u[1:-1, 1:-1][interior_mask]
