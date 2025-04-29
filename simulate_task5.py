@@ -6,7 +6,8 @@ import time
 from multiprocessing import Pool
 import numpy as np
 
-LOAD_DIR = '../modified_swiss_dwellings/'
+# LOAD_DIR = '../modified_swiss_dwellings/'
+LOAD_DIR = '/dtu/projects/02613_2025/data/modified_swiss_dwellings/'
 MAX_ITER = 20000
 ABS_TOL = 1e-4
 

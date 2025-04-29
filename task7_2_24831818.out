@@ -1,0 +1,79 @@
+Processing 20 floorplans with 2 workers
+Time of using 2 workers to process 20 floors: 94.38 seconds.
+building_id, mean_temp, std_temp, pct_above_18, pct_below_15
+10000, 14.01, 6.37, 30.94, 55.54
+10009, 11.00, 5.81, 16.67, 74.97
+10014, 14.74, 7.04, 38.26, 52.81
+10019, 14.74, 7.03, 38.15, 52.93
+10029, 10.62, 6.32, 18.26, 74.51
+10031, 12.51, 6.28, 24.04, 66.40
+10051, 13.29, 6.00, 25.98, 62.86
+10053, 11.37, 6.26, 19.95, 72.41
+10056, 14.22, 6.18, 31.76, 57.06
+10064, 12.72, 6.96, 28.79, 62.76
+10075, 15.16, 6.44, 39.12, 47.46
+10079, 15.09, 7.31, 41.90, 49.45
+10080, 15.78, 7.28, 46.37, 44.71
+10082, 16.47, 6.71, 48.64, 40.56
+10083, 15.64, 7.12, 44.86, 45.89
+10084, 15.10, 7.15, 40.91, 50.27
+10085, 15.87, 7.19, 46.18, 44.73
+10086, 14.39, 7.22, 37.26, 53.02
+10087, 15.07, 7.28, 41.53, 49.90
+10089, 13.99, 7.28, 35.46, 56.36
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24831818: <task7_2> in cluster <dcc> Done
+
+Job <task7_2> was submitted from host <hpclogin1> by user <s240046> in cluster <dcc> at Tue Apr 29 17:45:25 2025
+Job was executed on host(s) <2*n-62-30-23>, in queue <hpc>, as user <s240046> in cluster <dcc> at Tue Apr 29 17:45:26 2025
+</zhome/61/3/208723> was used as the home directory.
+</zhome/61/3/208723> was used as the working directory.
+Started at Tue Apr 29 17:45:26 2025
+Terminated at Tue Apr 29 17:47:01 2025
+Results reported at Tue Apr 29 17:47:01 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J task7_2
+#BSUB -q hpc
+#BSUB -W 4
+#BSUB -R "rusage[mem=128MB]"
+#BSUB -n 2
+#BSUB -R "span[hosts=1]"
+#BSUB -o task7_2_%J.out
+#BSUB -e task7_2_%J.err
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613
+
+python simulate_task5.py --n 20 --workers 2
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   186.49 sec.
+    Max Memory :                                 58 MB
+    Average Memory :                             58.00 MB
+    Total Requested Memory :                     256.00 MB
+    Delta Memory :                               198.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                10
+    Run time :                                   95 sec.
+    Turnaround time :                            96 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <task7_2_24831818.err> for stderr output of this job.
+

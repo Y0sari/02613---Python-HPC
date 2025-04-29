@@ -6,7 +6,8 @@ from multiprocessing import Pool
 import numpy as np
 from numba import njit
 
-LOAD_DIR = '../modified_swiss_dwellings/'
+# LOAD_DIR = '../modified_swiss_dwellings/'
+LOAD_DIR = '/dtu/projects/02613_2025/data/modified_swiss_dwellings/'
 MAX_ITER = 20000
 ABS_TOL = 1e-4
 
@@ -18,28 +19,29 @@ def load_data(load_dir, bid):
     return u, interior_mask
 
 @njit
-def jacobi_numba(u, interior_mask, max_iter, atol=1e-6):
-    u = u.copy()
-
+def jacobi_numba(u_init, interior_mask, max_iter, atol=1e-6):
+    u = np.ascontiguousarray(u_init)
     m, n = interior_mask.shape
 
+    u_new = np.empty_like(u)
+
     for it in range(max_iter):
-        u_new = u.copy()
-        
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if interior_mask[i-1, j-1]:
-                    u_new[i, j] = 0.25 * (u[i, j-1] + u[i, j+1] + u[i-1, j] + u[i+1, j])
 
+        u_new[:] = u
         diff = 0.0
+
         for i in range(1, m + 1):
             for j in range(1, n + 1):
-                if interior_mask[i-1, j-1]:
-                    temp = np.abs(u_new[i, j] - u[i, j])
-                    if temp > diff:
-                        diff = temp
+                if interior_mask[i - 1, j - 1]:
+                    val = 0.25 * (u[i, j-1] + u[i, j+1] + u[i-1, j] + u[i+1, j])
+                    u_new[i, j] = val
 
-        u = u_new
+                    d = abs(val - u[i, j])
+                    if d > diff:
+                        diff = d
+
+        u, u_new = u_new, u
+
         if diff < atol:
             break
     return u
@@ -83,10 +85,16 @@ def main():
     building_ids = building_ids[:args.n]
     print(f"Processing {len(building_ids)} floorplans with {args.workers} workers")
 
+    u0, mask0 = load_data_for_building(building_ids[0])
+    jacobi_numba(np.ascontiguousarray(u0), np.ascontiguousarray(mask0), 1, ABS_TOL)
+
     start_time = time.time()
-    results = []
-    for bid in building_ids:
-        results.append(process_building(bid))
+    with Pool(processes=args.workers) as pool:
+        jobs = [
+            (np.ascontiguousarray(*load_data_for_building(bid)),) + (bid,)
+            for bid in building_ids
+        ]
+        results = pool.map(process_building, building_ids)
     end_time = time.time()
 
     total_time = end_time - start_time
