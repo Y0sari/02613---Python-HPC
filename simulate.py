@@ -54,8 +54,8 @@ if __name__ == '__main__':
     # building_ids = building_ids[:N]
 
     # Load floor plans
-    building_ids = ['1869', '5158']
-    N = 2
+    building_ids = ['694','986','1878','1869','3171','4485','5158','5971','6233','6452','7025','7987','8264','9648','9991','10000','10535','29753','49314','50814']
+    N = len(building_ids)
     all_u0 = np.empty((N, 514, 514))
 
     all_interior_mask = np.empty((N, 512, 512), dtype='bool')
