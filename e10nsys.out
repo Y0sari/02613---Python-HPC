@@ -1,0 +1,269 @@
+Running Jacobi (fused) on 20 buildings...
+[1/20] 10000 finished in 1865.35 ms
+[2/20] 10009 finished in 2178.91 ms
+[3/20] 10014 finished in 3217.06 ms
+[4/20] 10019 finished in 3183.72 ms
+[5/20] 10029 finished in 1416.81 ms
+[6/20] 10031 finished in 1918.96 ms
+[7/20] 10051 finished in 622.23 ms
+[8/20] 10053 finished in 1815.94 ms
+[9/20] 10056 finished in 646.28 ms
+[10/20] 10064 finished in 2638.37 ms
+[11/20] 10075 finished in 3580.33 ms
+[12/20] 10079 finished in 3297.94 ms
+[13/20] 10080 finished in 3307.92 ms
+[14/20] 10082 finished in 3554.00 ms
+[15/20] 10083 finished in 1662.89 ms
+[16/20] 10084 finished in 1635.75 ms
+[17/20] 10085 finished in 1766.25 ms
+[18/20] 10086 finished in 3382.38 ms
+[19/20] 10087 finished in 3203.33 ms
+[20/20] 10089 finished in 3356.86 ms
+
+Total GPU time: 48.26 seconds
+
+building_id, mean_temp, std_temp, pct_above_18, pct_below_15
+10000, 14.01233878811275, 6.367431059312565, 30.941014791508444, 55.542295034537624
+10009, 11.000135812436369, 5.811144379826626, 16.6712734948236, 74.9723590310584
+10014, 14.744169941950119, 7.037733284673849, 38.26367541377415, 52.80837116508215
+10019, 14.735524480624479, 7.030325006703675, 38.14915412864569, 52.92926826787113
+10029, 10.616037322820358, 6.317331938274926, 18.25563221896085, 74.51301795448481
+10031, 12.507072852890545, 6.278432089100354, 24.044722033998173, 66.39513301711693
+10051, 13.289039951277402, 5.999085063388632, 25.97693550756574, 62.859923608050536
+10053, 11.366493551285709, 6.26121798185875, 19.9510754583921, 72.41052538787024
+10056, 14.220114507861702, 6.179461157398301, 31.763454814173965, 57.06174975667784
+10064, 12.71696893739585, 6.964227784263683, 28.79137124461432, 62.75688345539249
+10075, 15.156939199079357, 6.44052034037085, 39.12088154756647, 47.45605511880576
+10079, 15.094353507626137, 7.313911268349323, 41.90001451870493, 49.44974108309539
+10080, 15.777740694240359, 7.280585752157965, 46.365765006711015, 44.711034476002
+10082, 16.465720758630678, 6.713345052234242, 48.64349722630506, 40.56137689061685
+10083, 15.639247995421403, 7.120808056609733, 44.855518923515284, 45.886354482120744
+10084, 15.100584697661853, 7.150541807748643, 40.90648998644782, 50.266526125583496
+10085, 15.868862158668058, 7.192791728448738, 46.18303917834116, 44.72566696293788
+10086, 14.391525374209257, 7.2156160731937105, 37.25664572257129, 53.01884968583857
+10087, 15.073205905031166, 7.275519953981684, 41.532405798190645, 49.89713190601896
+10089, 13.989763514400206, 7.276278123379982, 35.45861191757374, 56.3640146392669
+
+✅  20  floorplans，time 48.72 second
+Generating '/tmp/nsys-report-d59a.qdstrm'
+[1/1] [0%                          ] e10_profile.nsys-rep[1/1] [0%                          ] e10_profile.nsys-rep[1/1] [7%                          ] e10_profile.nsys-rep[1/1] [14%                         ] e10_profile.nsys-rep[1/1] [=15%                        ] e10_profile.nsys-rep[1/1] [=16%                        ] e10_profile.nsys-rep[1/1] [=17%                        ] e10_profile.nsys-rep[1/1] [==18%                       ] e10_profile.nsys-rep[1/1] [==19%                       ] e10_profile.nsys-rep[1/1] [==20%                       ] e10_profile.nsys-rep[1/1] [==21%                       ] e10_profile.nsys-rep[1/1] [===22%                      ] e10_profile.nsys-rep[1/1] [===23%                      ] e10_profile.nsys-rep[1/1] [11%                         ] e10_profile.nsys-rep[1/1] [12%                         ] e10_profile.nsys-rep[1/1] [8%                          ] e10_profile.nsys-rep[1/1] [6%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [0%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [5%                          ] e10_profile.nsys-rep[1/1] [6%                          ] e10_profile.nsys-rep[1/1] [7%                          ] e10_profile.nsys-rep[1/1] [8%                          ] e10_profile.nsys-rep[1/1] [9%                          ] e10_profile.nsys-rep[1/1] [10%                         ] e10_profile.nsys-rep[1/1] [11%                         ] e10_profile.nsys-rep[1/1] [12%                         ] e10_profile.nsys-rep[1/1] [13%                         ] e10_profile.nsys-rep[1/1] [14%                         ] e10_profile.nsys-rep[1/1] [=15%                        ] e10_profile.nsys-rep[1/1] [=16%                        ] e10_profile.nsys-rep[1/1] [=17%                        ] e10_profile.nsys-rep[1/1] [==18%                       ] e10_profile.nsys-rep[1/1] [==19%                       ] e10_profile.nsys-rep[1/1] [==20%                       ] e10_profile.nsys-rep[1/1] [==21%                       ] e10_profile.nsys-rep[1/1] [===22%                      ] e10_profile.nsys-rep[1/1] [===23%                      ] e10_profile.nsys-rep[1/1] [===24%                      ] e10_profile.nsys-rep[1/1] [====25%                     ] e10_profile.nsys-rep[1/1] [====26%                     ] e10_profile.nsys-rep[1/1] [====27%                     ] e10_profile.nsys-rep[1/1] [====28%                     ] e10_profile.nsys-rep[1/1] [=====29%                    ] e10_profile.nsys-rep[1/1] [=====30%                    ] e10_profile.nsys-rep[1/1] [=====31%                    ] e10_profile.nsys-rep[1/1] [=====32%                    ] e10_profile.nsys-rep[1/1] [======33%                   ] e10_profile.nsys-rep[1/1] [======34%                   ] e10_profile.nsys-rep[1/1] [======35%                   ] e10_profile.nsys-rep[1/1] [=======36%                  ] e10_profile.nsys-rep[1/1] [=======37%                  ] e10_profile.nsys-rep[1/1] [=======38%                  ] e10_profile.nsys-rep[1/1] [=======39%                  ] e10_profile.nsys-rep[1/1] [========40%                 ] e10_profile.nsys-rep[1/1] [========41%                 ] e10_profile.nsys-rep[1/1] [========42%                 ] e10_profile.nsys-rep[1/1] [=========43%                ] e10_profile.nsys-rep[1/1] [=========44%                ] e10_profile.nsys-rep[1/1] [=========45%                ] e10_profile.nsys-rep[1/1] [=========46%                ] e10_profile.nsys-rep[1/1] [==========47%               ] e10_profile.nsys-rep[1/1] [==========48%               ] e10_profile.nsys-rep[1/1] [==========49%               ] e10_profile.nsys-rep[1/1] [===========50%              ] e10_profile.nsys-rep[1/1] [===========51%              ] e10_profile.nsys-rep[1/1] [===========52%              ] e10_profile.nsys-rep[1/1] [===========53%              ] e10_profile.nsys-rep[1/1] [============54%             ] e10_profile.nsys-rep[1/1] [============55%             ] e10_profile.nsys-rep[1/1] [============56%             ] e10_profile.nsys-rep[1/1] [============57%             ] e10_profile.nsys-rep[1/1] [=============58%            ] e10_profile.nsys-rep[1/1] [=============59%            ] e10_profile.nsys-rep[1/1] [=============60%            ] e10_profile.nsys-rep[1/1] [==============61%           ] e10_profile.nsys-rep[1/1] [==============62%           ] e10_profile.nsys-rep[1/1] [==============63%           ] e10_profile.nsys-rep[1/1] [==============64%           ] e10_profile.nsys-rep[1/1] [===============65%          ] e10_profile.nsys-rep[1/1] [===============66%          ] e10_profile.nsys-rep[1/1] [===============67%          ] e10_profile.nsys-rep[1/1] [================68%         ] e10_profile.nsys-rep[1/1] [================69%         ] e10_profile.nsys-rep[1/1] [================70%         ] e10_profile.nsys-rep[1/1] [================71%         ] e10_profile.nsys-rep[1/1] [=================72%        ] e10_profile.nsys-rep[1/1] [=================73%        ] e10_profile.nsys-rep[1/1] [=================74%        ] e10_profile.nsys-rep[1/1] [==================75%       ] e10_profile.nsys-rep[1/1] [==================76%       ] e10_profile.nsys-rep[1/1] [========================100%] e10_profile.nsys-rep[1/1] [========================100%] e10_profile.nsys-rep
+Generated:
+    /zhome/1f/a/219282/exercise/e10_profile.nsys-rep
+Generating SQLite file e10_profile.sqlite from e10_profile.nsys-rep
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/nvtxsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/osrtsum.py]... 
+
+ ** OS Runtime Summary (osrtsum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)           Name         
+ --------  ---------------  ---------  -----------  -----------  --------  ---------  -----------  ----------------------
+     51.0      48326212641        495   97628712.4  100151372.0      3853  107608706   14999026.9  poll                  
+     48.0      45524945539        188  242153965.6  241478895.5  13077228  674698325   35896997.6  sem_wait              
+      0.4        343388137         43    7985770.6     312388.0      2294   17232121    8431579.5  fread                 
+      0.3        261416565        882     296390.7     287063.5      1284     556898     101731.9  open64                
+      0.2        212716918        868     245065.6     182999.5      1005    4063468     290296.0  read                  
+      0.2        163053450        573     284561.0      12692.0      1352   49816975    2135289.5  ioctl                 
+      0.0          2742695        296       9265.9       4032.0      1565    1081631      62960.4  mmap64                
+      0.0          2326417         37      62876.1       3511.0      1372    1296882     223699.9  fopen                 
+      0.0          1763460        249       7082.2       6545.0      2665      25599       2952.3  munmap                
+      0.0          1711706         10     171170.6      42669.5     27481    1190980     360646.8  sem_timedwait         
+      0.0           992613        137       7245.4       5298.0      1038     286110      24025.3  pthread_cond_signal   
+      0.0           770651         80       9633.1       4529.0      1000     275213      30661.9  fgets                 
+      0.0           717099          8      89637.4       3537.5      2228     519854     183720.7  fopen64               
+      0.0           640640          4     160160.0     149930.5     31293     309486     142253.0  pthread_create        
+      0.0           343354         81       4238.9       2807.0      1002     130015      14232.8  fclose                
+      0.0           281805          1     281805.0     281805.0    281805     281805          0.0  pthread_cond_wait     
+      0.0           203321         18      11295.6       9602.5      2440      54031      11833.7  mmap                  
+      0.0            91827         40       2295.7       2375.0      1300       2819        303.0  fcntl                 
+      0.0            59759          1      59759.0      59759.0     59759      59759          0.0  waitpid               
+      0.0            42252          6       7042.0       7314.0      3785      10318       2519.0  pipe2                 
+      0.0            33395         13       2568.8       1706.0      1008      10439       2501.9  write                 
+      0.0            25797          6       4299.5       4908.0      1154       6976       2385.1  open                  
+      0.0            13708          2       6854.0       6854.0      5394       8314       2064.8  socket                
+      0.0             7438          1       7438.0       7438.0      7438       7438          0.0  connect               
+      0.0             6277          1       6277.0       6277.0      6277       6277          0.0  pthread_cond_broadcast
+      0.0             4887          3       1629.0       1919.0      1009       1959        537.3  sigaction             
+      0.0             4779          3       1593.0       1389.0      1013       2377        704.5  signal                
+      0.0             3739          2       1869.5       1869.5      1580       2159        409.4  fwrite                
+      0.0             3288          1       3288.0       3288.0      3288       3288          0.0  fflush                
+      0.0             3231          2       1615.5       1615.5      1489       1742        178.9  pthread_mutex_lock    
+      0.0             2323          1       2323.0       2323.0      2323       2323          0.0  fputs                 
+      0.0             2311          1       2311.0       2311.0      2311       2311          0.0  dup2                  
+      0.0             1777          1       1777.0       1777.0      1777       1777          0.0  bind                  
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/cudaapisum.py]... 
+
+ ** CUDA API Summary (cudaapisum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)   Med (ns)   Min (ns)  Max (ns)   StdDev (ns)              Name            
+ --------  ---------------  ---------  ----------  ---------  --------  ---------  -----------  ----------------------------
+     57.1       6582571719    1535534      4286.8     4163.0      3109     745186       1960.7  cuLaunchKernel              
+     27.8       3208513039     236296     13578.4    13428.0      6009    1207037       6251.0  cudaMemcpyAsync             
+      9.1       1045745992     236236      4426.7     4540.0      3451     742431       3040.3  cudaLaunchKernel            
+      2.9        337641060     236256      1429.1     1415.0      1250      11543        215.0  cudaStreamSynchronize       
+      1.5        178002904     236296       753.3      746.0       453      10422        161.1  cudaStreamIsCapturing_v10000
+      1.5        167390136          7  23912876.6    97016.0     88534  166721787   62972818.0  cudaMalloc                  
+      0.0          2607626          2   1303813.0  1303813.0    925557    1682069     534934.8  cudaHostAlloc               
+      0.0          1647608         13    126739.1   107961.0     88218     385150      78284.9  cuModuleLoadData            
+      0.0           566343          6     94390.5    89514.0     53386     157337      39988.5  cuModuleUnload              
+      0.0           162440         98      1657.6     1500.5       512       4148       1069.8  cudaEventQuery              
+      0.0           136726         20      6836.3     5388.0      4173      10486       2501.0  cudaDeviceSynchronize       
+      0.0           133113         40      3327.8     3536.0      2331       6237        916.9  cudaEventRecord             
+      0.0           130797         40      3269.9     3099.0      1455       8979       1724.3  cudaEventCreateWithFlags    
+      0.0           103617        384       269.8      226.0       141       1040        122.1  cuGetProcAddress            
+      0.0            93436         39      2395.8     1642.0       837       5527       1556.1  cudaEventDestroy            
+      0.0            66168          1     66168.0    66168.0     66168      66168          0.0  cudaMemGetInfo              
+      0.0             2022          1      2022.0     2022.0      2022       2022          0.0  cuInit                      
+      0.0             1347          2       673.5      673.5       257       1090        589.0  cuModuleGetLoadingMode      
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpukernsum.py]... 
+
+ ** CUDA GPU Kernel Summary (gpukernsum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)     GridXYZ         BlockXYZ                                                     Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  --------------  --------------  ----------------------------------------------------------------------------------------------------
+      8.5        734976409     118118    6222.4    6208.0      5696      7808         76.8   512    1    1   512    1    1  cupy_scan_naive                                                                                     
+      8.2        715049660     118118    6053.7    6048.0      5536      7360         67.2  2048    1    1   128    1    1  fused_jacobi_step                                                                                   
+      7.7        672908966     118118    5696.9    5696.0      5184      6464         69.0  2048    1    1   128    1    1  cupy_subtract__float64_float64_float64                                                              
+      7.6        663728773     118118    5619.2    5600.0      5120      6689         60.1  2048    1    1   128    1    1  cupy_multiply__float64_int64_float64                                                                
+      7.0        609557762     118118    5160.6    5152.0      4672      6304         60.6  2048    1    1   128    1    1  cupy_add__float64_float64_float64                                                                   
+      6.9        601033646     118118    5088.4    5088.0      4608      6080         60.4  2048    1    1   128    1    1  cupy_multiply__float64_bool_float64                                                                 
+      6.9        598038883     118118    5063.1    5056.0      4608      5824         57.2  2048    1    1   128    1    1  cupy_copy__float64_float64                                                                          
+      6.7        585682329     118118    4958.5    4960.0      4448      5888         64.3  2048    1    1   128    1    1  cupy_getitem_mask                                                                                   
+      6.6        574248375     118118    4861.7    4864.0      4384      5632         59.1  2048    1    1   128    1    1  cupy_absolute__float64_float64                                                                      
+      6.5        564912837     118118    4782.6    4768.0      4320      6144         53.6  2048    1    1   128    1    1  cupy_subtract__int_bool_int64                                                                       
+      5.6        488406659     118118    4134.9    4128.0      3679      4960         65.9   512    1    1   256    1    1  cupy_bsum_shfl                                                                                      
+      5.2        454721966     118118    3849.7    3904.0      3263      5120        109.1     1    1    1   512    1    1  cupy_scan_naive                                                                                     
+      4.9        429143133     118118    3633.2    3680.0      3072      4896         98.9     1    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceSingleTileKern…
+      4.1        357255353     118118    3024.6    3040.0      2528      3872         69.1     1    1    1     1    1    1  cupy_less__float64_float_bool                                                                       
+      1.7        144690260      24887    5813.9    5792.0      5280      6752        384.5    52    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      1.5        129819693      22991    5646.5    5344.0      4512      6912        660.5    51    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      1.0         86252690      15835    5447.0    5440.0      5280      5920         64.7    48    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.5         43460070       8832    4920.8    4896.0      4480      5376         79.7    45    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.5         42033069       8161    5150.5    5152.0      5055      5601         63.0    50    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.5         40564036       8114    4999.3    5056.0      4448      5888        142.9    33    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.3         28586203       5493    5204.1    5184.0      5119      5633         61.4    39    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.3         25342411       5194    4879.2    4864.0      4799      5344         75.8    28    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.3         24855700       4369    5689.1    5664.0      5472      6144         57.6    35    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.3         23129340       4735    4884.8    4864.0      4799      6048         82.4    34    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.3         21746420       4479    4855.2    4832.0      4767      5600         84.0    23    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.2         19081025       3493    5462.6    5504.0      5152      5953         95.0    13    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.1          8057765       1535    5249.4    5248.0      5183      5696         62.2    27    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemtimesum.py]... 
+
+ ** GPU MemOps Summary (by Time) (gpumemtimesum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)      Operation     
+ --------  ---------------  ------  --------  --------  --------  --------  -----------  ------------------
+     99.4        358411268  236256    1517.0    1472.0      1056    634017       3258.9  [CUDA memcpy DtoH]
+      0.6          2016514      40   50412.9   50864.0     12928     87616      36970.8  [CUDA memcpy HtoD]
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemsizesum.py]... 
+
+ ** GPU MemOps Summary (by Size) (gpumemsizesum):
+
+ Total (MB)  Count   Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  ------  --------  --------  --------  --------  -----------  ------------------
+     47.514      40     1.188     1.188     0.262     2.114        0.938  [CUDA memcpy HtoD]
+     42.862  236256     0.000     0.000     0.000     2.114        0.019  [CUDA memcpy DtoH]
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/openmpevtsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain OpenMP event data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebugsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebuggpusum.py]... 
+SKIPPED: e10_profile.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/vulkanmarkerssum.py]... 
+SKIPPED: e10_profile.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/vulkangpumarkersum.py]... 
+SKIPPED: e10_profile.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx11pixsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain DX11 CPU debug markers.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx12gpumarkersum.py]... 
+SKIPPED: e10_profile.sqlite does not contain DX12 GPU debug markers.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx12pixsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain DX12 CPU debug markers.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/wddmqueuesdetails.py]... 
+SKIPPED: e10_profile.sqlite does not contain WDDM context data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemory.py]... 
+SKIPPED: e10_profile.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemorytotals.py]... 
+SKIPPED: e10_profile.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/umcpupagefaults.py]... 
+SKIPPED: e10_profile.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [e10_profile.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/openaccsum.py]... 
+SKIPPED: e10_profile.sqlite does not contain OpenACC event data.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 24882943: <nsys_e10> in cluster <dcc> Done
+
+Job <nsys_e10> was submitted from host <n-62-30-5> by user <s250181> in cluster <dcc> at Sun May  4 09:11:02 2025
+Job was executed on host(s) <4*n-62-18-10>, in queue <gpua100>, as user <s250181> in cluster <dcc> at Sun May  4 09:15:40 2025
+</zhome/1f/a/219282> was used as the home directory.
+</zhome/1f/a/219282/exercise> was used as the working directory.
+Started at Sun May  4 09:15:40 2025
+Terminated at Sun May  4 09:17:32 2025
+Results reported at Sun May  4 09:17:32 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -q gpua100
+#BSUB -J nsys_e10                       
+#BSUB -n 4                              
+#BSUB -R "span[hosts=1]"               
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process" 
+#BSUB -W 00:55                          
+#BSUB -o nsys.out
+#BSUB -e nsys.err
+
+source /dtu/projects/02613_2025/conda/conda_init.sh
+conda activate 02613                   
+
+nsys profile -o e10_profile python e10.py 20
+nsys stats e10_profile.nsys-rep
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   110.00 sec.
+    Max Memory :                                 866 MB
+    Average Memory :                             866.00 MB
+    Total Requested Memory :                     16384.00 MB
+    Delta Memory :                               15518.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                30
+    Run time :                                   114 sec.
+    Turnaround time :                            390 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <nsys.err> for stderr output of this job.
+
